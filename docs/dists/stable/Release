@@ -1,0 +1,28 @@
+Origin: Octium
+Label: Octium Apt Repository
+Codename: stable
+Date: Fri, 15 May 2026 17:44:36 UTC
+Architectures: amd64
+Components: main
+Description: Octium apt repository
+MD5Sum:
+ d41d8cd98f00b204e9800998ecf8427e 0 main/binary-amd64/Packages
+ 7029066c27ac6f5ef18d660d5741979a 20 main/binary-amd64/Packages.gz
+ bb57d644fee0349e2b39e9a22716ffd5 115 main/binary-amd64/Release
+ d41d8cd98f00b204e9800998ecf8427e 0 main/source/Sources
+ 7029066c27ac6f5ef18d660d5741979a 20 main/source/Sources.gz
+ 66807b9c947681115054d2943cac004b 116 main/source/Release
+SHA1:
+ da39a3ee5e6b4b0d3255bfef95601890afd80709 0 main/binary-amd64/Packages
+ 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 main/binary-amd64/Packages.gz
+ 1fb5db6bef56e23c01bbadb1e580f3e5e310724c 115 main/binary-amd64/Release
+ da39a3ee5e6b4b0d3255bfef95601890afd80709 0 main/source/Sources
+ 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 main/source/Sources.gz
+ 538a09d88500f48887265de757b2fa51788f73b7 116 main/source/Release
+SHA256:
+ e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 main/binary-amd64/Packages
+ 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 main/binary-amd64/Packages.gz
+ b420e4b7ffe6fc52f838b38b6005e09ed3af71d6fc4438ffcc9f608769915430 115 main/binary-amd64/Release
+ e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 main/source/Sources
+ 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 main/source/Sources.gz
+ 4274c71b5da48beab1b04d66875a62cf0ea8af3b310970ccbc9cbb548716029d 116 main/source/Release

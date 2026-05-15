@@ -1,0 +1,5 @@
+Component: main
+Origin: Octium
+Label: Octium Apt Repository
+Architecture: source
+Description: Octium apt repository

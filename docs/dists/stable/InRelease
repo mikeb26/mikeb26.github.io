@@ -1,0 +1,47 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Origin: Octium
+Label: Octium Apt Repository
+Codename: stable
+Date: Fri, 15 May 2026 17:44:36 UTC
+Architectures: amd64
+Components: main
+Description: Octium apt repository
+MD5Sum:
+ d41d8cd98f00b204e9800998ecf8427e 0 main/binary-amd64/Packages
+ 7029066c27ac6f5ef18d660d5741979a 20 main/binary-amd64/Packages.gz
+ bb57d644fee0349e2b39e9a22716ffd5 115 main/binary-amd64/Release
+ d41d8cd98f00b204e9800998ecf8427e 0 main/source/Sources
+ 7029066c27ac6f5ef18d660d5741979a 20 main/source/Sources.gz
+ 66807b9c947681115054d2943cac004b 116 main/source/Release
+SHA1:
+ da39a3ee5e6b4b0d3255bfef95601890afd80709 0 main/binary-amd64/Packages
+ 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 main/binary-amd64/Packages.gz
+ 1fb5db6bef56e23c01bbadb1e580f3e5e310724c 115 main/binary-amd64/Release
+ da39a3ee5e6b4b0d3255bfef95601890afd80709 0 main/source/Sources
+ 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 main/source/Sources.gz
+ 538a09d88500f48887265de757b2fa51788f73b7 116 main/source/Release
+SHA256:
+ e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 main/binary-amd64/Packages
+ 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 main/binary-amd64/Packages.gz
+ b420e4b7ffe6fc52f838b38b6005e09ed3af71d6fc4438ffcc9f608769915430 115 main/binary-amd64/Release
+ e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 main/source/Sources
+ 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 main/source/Sources.gz
+ 4274c71b5da48beab1b04d66875a62cf0ea8af3b310970ccbc9cbb548716029d 116 main/source/Release
+-----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCgAdFiEECNz63/ehHCLflw02m3qpW94Fcv4FAmoHW4QACgkQm3qpW94F
+cv4kIw//bRXefy9WfW2iZEiG9NG65rig8U6Avcrtw/9silbrTlGegqCmdZU+1oTh
+t0ZGXrxOqiZ26OHvQdanD7erAgygC1WA4UTq2Smj1maQkW36OLTu3RQ+FWDd29Hb
++SkdZfXh9nEL9eFL+AX4XsSl0qtB7coPN8XO5sqMMs/BeY+fm6dXSo9QX3CaRs3V
+sjZWg9rkH9XH4vszcLKdO09CCTNn03m6hAzOGOHzDSj5PrBc5ZYE9BEnXJ8S19d0
+J71KxprSU8Hs+vgCJWjGltu893nipxc812uirst8OxXbtavgnpl1ov9feVT5wfle
+RXFX4uKDrbxw+fNW+rBZl0H0dwjX+2zqzUDEhGSZ2p4jJWW6AecRT7DFTvvmfteH
+UtC4nHXm69LkpRpaFbkzBHuAU3NnArAd99Lt0y0tVSPqNmx8Qq49xbq6UlBf+9lz
+oOmZHfO7kP3h7frz0PddW+a3aKIisBPpoi4KhTaRzFhg0gLrgf7H/eyNQ0GCr9rG
+K8Y4davdYRwIGaM6s+bnR65rl49mr+NdFI23APY6KRtG0GTePD3QO9GdoO/hEHGX
+hNGssu/kLT8q3tlw2xEkez9LNwm+BZoz4ghee4EaUHBYlnNtcMKMkq7moNzJv1wY
+Dv9VrhycJtyLJ66AH/U7hQqHJUnQiiI0PCyo78HXGFjq+baFyyY=
+=OjrB
+-----END PGP SIGNATURE-----

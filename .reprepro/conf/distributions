@@ -1,0 +1,7 @@
+Codename: stable
+Origin: Octium
+Label: Octium Apt Repository
+Architectures: amd64 source
+Components: main
+Description: Octium apt repository
+SignWith: 08DCFADFF7A11C22DF970D369B7AA95BDE0572FE
