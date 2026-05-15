@@ -1,17 +1,17 @@
 Package: octium
-Version: 0.17.9-1
+Version: 0.17.10-1
 Architecture: amd64
 Maintainer: Octium DEB Packaging <apt@octium.dev>
 Installed-Size: 44722
-Depends: libc6 (>= 2.34), libncursesw6 (>= 6), libtinfo6 (>= 6), systemd, git, ripgrep, locales, sudo, ncurses-bin, ca-certificates, fonts-liberation, chromium
+Depends: libc6 (>= 2.34), libncursesw6 (>= 6), libtinfo6 (>= 6), systemd, git, ripgrep, locales, sudo, ncurses-bin, ca-certificates, fonts-liberation, chromium | chromium-browser
 Homepage: https://github.com/mikeb26/octium
 Priority: optional
 Section: utils
-Filename: pool/main/o/octium/octium_0.17.9-1_amd64.deb
-Size: 10655982
-SHA256: 3e0e77301662d8f09768aeaf272a51e1c3ee8d64b9182d3d60ff014e0623511c
-SHA1: 864a415f057b0b1b7dc07a846baece7068a11735
-MD5sum: 7718a39bf6844572dcc6e4e7ec44a3f3
+Filename: pool/main/o/octium/octium_0.17.10-1_amd64.deb
+Size: 10655436
+SHA256: a155333a59fc0348bcec8b1fd72276a34fb000511bd33a36a891a518cfc92f39
+SHA1: 8ed2d33581ac5208c249e4164248256730aaa9cc
+MD5sum: df0a3deb16fc3d653e548c4fb4e6e296
 Description: terminal-based agentic coding assistant (ncurses TUI)
  octium is a terminal-based, agentic coding assistant with an ncurses UI.
  It supports multiple LLM vendors and a curated, approval-gated toolset.
