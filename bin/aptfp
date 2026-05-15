@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+key_selector=${APT_SIGN_KEY:-apt@octium.dev}
+
+fingerprint=$(
+    { gpg --batch --with-colons --fingerprint --list-secret-keys "$key_selector" 2>/dev/null || true; } |
+        awk -F: '$1 == "fpr" { print $10; exit }'
+)
+
+if [[ -z "$fingerprint" ]]; then
+    echo "No secret GPG signing key found for selector: $key_selector" >&2
+    exit 1
+fi
+
+printf '%s\n' "$fingerprint"
