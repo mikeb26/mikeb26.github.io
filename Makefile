@@ -1,4 +1,7 @@
-.PHONY: aptkey aptrepo addeb aptfp aptpubkeys
+.PHONY: aptkey aptrepo addeb aptfp aptpubkeys build
+
+build:
+	echo "make addeb DEB=<path2.deb>"
 
 DEB ?= $(firstword $(filter %.deb,$(MAKECMDGOALS)))
 
@@ -25,7 +28,7 @@ aptpubkeys:
 	gpg --batch --yes --armor --export "$$key_fp" > '$(APT_KEY_ASC)'; \
 	printf '%s\n' "Published apt repository signing keys:" "  $(APT_KEYRING)" "  $(APT_KEY_ASC)"
 
-aptrepo: aptpubkeys
+aptrepo: .reprepro/db/packages.db aptpubkeys
 	install -d '$(APT_REPREPRO_BASE)/conf' '$(APT_REPO_DIR)'
 	key_fp=$$(APT_SIGN_KEY='$(APT_SIGN_KEY)' bash bin/aptfp); \
 	printf '%s\n' \
@@ -39,7 +42,21 @@ aptrepo: aptpubkeys
 		> '$(APT_REPREPRO_BASE)/conf/distributions'
 	$(APT_REPREPRO) export '$(APT_CODENAME)'
 
-addeb: aptrepo
+.reprepro/db/packages.db:
+	install -d '$(APT_REPREPRO_BASE)/conf' '$(APT_REPO_DIR)'
+	key_fp=$$(APT_SIGN_KEY='$(APT_SIGN_KEY)' bash bin/aptfp); \
+	printf '%s\n' \
+		'Codename: $(APT_CODENAME)' \
+		'Origin: Octium' \
+		'Label: Octium Apt Repository' \
+		'Architectures: $(APT_ARCHITECTURES)' \
+		'Components: $(APT_COMPONENT)' \
+		'Description: Octium apt repository' \
+		"SignWith: $$key_fp" \
+		> '$(APT_REPREPRO_BASE)/conf/distributions'
+	$(APT_REPREPRO) export '$(APT_CODENAME)'
+
+addeb: .reprepro/db/packages.db
 	@test -n '$(DEB)' || { echo "Usage: make addeb DEB=/path/to/package.deb" >&2; echo "   or: make addeb /path/to/package.deb" >&2; exit 2; }
 	@test -f '$(DEB)' || { echo "No such .deb: $(DEB)" >&2; exit 2; }
 	$(APT_REPREPRO) --component '$(APT_COMPONENT)' includedeb '$(APT_CODENAME)' '$(DEB)'
